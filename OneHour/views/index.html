@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>首页</title>
+		<meta name="Keywords" content="关键词"/>
+		<meta name="Description" content="内容描述"/>
+		<script src="../public/js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../public/js/lib/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../public/js/lib/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../public/css/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="../public/css/themes/icon.css"/>
+		<link rel="stylesheet" type="text/css" href="../public/css/dAll.css"/>	
+	</head>
+<body class="easyui-layout">
+    <!--<div data-options="region:'north',border:false" style="height: 74px; background: #2596ea; padding: 10px">
+        <img src="images/logo.png" />EasyUIDemo
+    </div>
+    <div data-options="region:'south',border:false" style="height: 23px;">
+        <div class="foot">EasyUIDemo</div>
+    </div>-->
+    <div data-options="region:'west',split:false" title="主菜单" style="width: 170px;" class="box"> 
+    	<div class="easyui-accordion" data-options="fit:true,border:false">
+            <div title="界面组件" data-options="selected:true">
+                <div style="margin: 5px">
+                    <ul id='tree' class="tree easyui-tree" data-options="animate:false,lines:true">
+                        <li data-options="iconCls:'icon-group'">
+                            <span>主框架面板</span>
+                            <ul>
+                                <li data-options="iconCls:'icon-group_add'">
+                                    <span >销售管理</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-options="region:'center'">
+    	
+    	<div class="easyui-tabs" data-options="fit:true" id="tabs" >
+		    <div title="我的页面" style="display:none;">
+		    	
+				<form id="form" method="post" class="clearfix" style="padding: 20px;">
+			        <div class="upload-photo">
+			            <label for="photo">图片上传:</label>
+			            <input  type="file" class="file" name="photo"></input>
+			        </div>
+			        <div>
+			            <label for="name">客户姓名:</label>
+			            <input  type="text" name="name"></input>
+			        </div>
+			        <div>
+			            <label for="id-number">身份证号:</label>
+			            <input  type="text" name="id-number"></input>
+			        </div>
+			        <div>
+			            <label for="phone">联系电话:</label>
+			            <input  type="number" name="phone"></input>
+			        </div>
+			        <div>
+			            <label for="chuanhao">手机串号IMEI:</label>
+			            <input  type="text" name="chuanhao"></input>
+			        </div>
+			        <div>
+			            <label for="pinpai">品牌:</label>
+			            <input type="text" name="pinpai"></input>
+			        </div>
+			        <div>
+			            <label for="xinghao">型号:</label>
+			            <input type="text" name="xinghao"></input>
+			        </div>
+			        <div>
+			            <label for="toubao">投保金额:</label>
+			            <input type="number" name="toubao"></input>
+			        </div>
+			        <div>
+			        	<label for="shengxiao">生效日期:</label>
+			        	<input id="shengxiao" type="text" class="easyui-datebox">
+			        </div>
+			        <div>
+			        	<label for="daoqi">到期日期:</label>
+			        	<input id="daoqi" type="text" class="easyui-datebox">
+			        </div>
+			        <div>
+			            <label for="xiaoshou">销售价格:</label>
+			            <input type="number" name="xiaoshou"></input>
+			        </div>
+			       <div>
+			            <label for="caozuo">操作员:</label>
+			            <input type="text" name="caozuo"></input>
+			        </div>
+			        <input type="submit" class="submit" value="提交"/>
+			    </form>
+			 	<div id="cot" class="easyui-panel" 
+			 		data-options='closable:true,'style="width:100%;height: 500px;" 
+			 		title="选择">
+			 		
+		    		
+		 			<table class="easyui-datagrid"
+			            data-options="url:'',method:'get',border:true,singleSelect:true,fit:true,fitColumns:true, 
+			            pagination:true,rownumbers:true"
+			            id="tb"
+			            >
+
+			            <thead>
+			                <tr>
+			                    <th data-options="field:'pinpai',align:'center'" width="40">品牌</th>
+			                    <th data-options="field:'xinghao',align:'center'" width="60">型号</th>
+			                    <th data-options="field:'price',align:'center'" width="30">手机零售价</th>
+			                    <th data-options="field:'baoe',align:'center'" width="30">保额</th>
+			                    <th data-options="field:'baoe6',align:'center'" width="30">保额6%</th>
+			                    <th data-options="field:'lingshou',align:'center'" width="30">建议零售价</th>
+			                    <th data-options="field:'chazhao',align:'center'" width="30">查找带回</th>
+			                </tr>
+			            </thead>
+			            
+						
+			        </table>
+		    	</div>
+							 			
+			 		
+			    
+		    </div>
+		</div>       
+    </div>
+    
+    
+    
+    <script src="../public/js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

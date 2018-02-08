@@ -1,0 +1,48 @@
+#form{
+    position: relative;
+    max-width: 2000px;
+    margin-bottom: 50px;
+    div{
+        width: 250px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 25px;
+        label{
+           float: left;
+           margin-right: 20px;
+        }
+        input{
+            float: right;
+            width: 130px;
+            border: 1px solid #AAAAAA;
+        }
+        .file{
+            height: 18px;
+            border: none;
+           
+        }
+        .textbox{
+            float: right;
+            width: 130px;
+            height: 20px;
+            input{
+                border: none;
+            }
+        }
+    }
+    .submit{
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #AAAAAA;
+        background-color: #1E90FF;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+}

@@ -1,0 +1,70 @@
+@import 'base';
+
+html{
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    min-height: 100%;
+    background-color: #f6f6f6;
+}
+
+
+
+.hide{
+    display: none;
+}
+.unvisible{
+    opacity: 0;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+//clear
+.clearfix,.clear {
+    *zoom: 1;
+    &:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+}
+
+.floatL{
+    float: left !important;
+}
+
+.floatR{
+    float: right !important;
+}
+
+//alert txt
+.alert-txt{
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    max-width: 80%;
+    padding:0.6rem 1.1rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    @include prefixer(transform,translateX(-50%));
+    @include prefixer(border-radius,0.6rem);
+    z-index: 99999;
+}
+
+.fullBg{
+    position: relative;
+    width:100%;
+    left: 0;
+    top: 0;
+    @include prefixer(background-size,cover);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+
+
